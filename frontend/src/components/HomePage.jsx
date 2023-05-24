@@ -7,6 +7,7 @@ import Avery from "../Assets/Asset 3@4x-8@2x.jpg"
 import MaskG2 from "../Assets/Mask Group 2@2x.jpg"
 import MaskG1 from "../Assets/Mask Group 1@2x.jpg"
 import GS_digit2 from "../Assets/GS_DIGITAL_AD_WALL_FILMS_INTERIOR_DESIGN_COLLECTION_Indoor_MPI8621_Removable.jpg"
+import vector from "../Assets/Vector Smart Object@2x.jpg"
 const HomePage = () => {
     const [wid,setwid]=useState(window.innerWidth)
     const currentsize=()=>{
@@ -131,16 +132,53 @@ const HomePage = () => {
                  <input style={{border:"1px solid #F26621",padding:"10px 20px",color: "#FFFFFF",borderRadius:"9px",background: "#F26621"}} type="submit" value="Submit >" />
                </form>
                {wid>=901?<img id="group" src={group} alt={group} />:<img id="group" src={MaskG1} alt={MaskG1} />}
+
+
+               <div id="group_info">
+                <h2 style={{marginLeft:"25px"}}>DOL Max Overlaminate Films</h2>
+               <p style={{marginLeft:"25px"}}>Printed graphics deserve maximum protection, DOL Max is the solution.</p>
+            
+               <ul>
+                <h3>Features & Benefits:</h3>
+               <li>Premium vertical durability of up to 7 years and up to 2 years horizontal durability protection.</li>
+               <li>The high gloss finish enhances the appearance of graphics and adds a special touch to help your graphics stand out.</li>
+               <li>Our digital overlaminates can be used on a variety of substrates, including banners, vehicle graphics, outdoor signage, and more.</li>
+               </ul>
+               <br />
+               <div style={{marginLeft:"20px"}} ><input style={{border:"1px solid #F26621",padding:"10px 30px",color: "#FFFFFF",borderRadius:"9px",background: "#F26621"}} type="submit" value="Inquire now  >" /></div>
+               </div>
+
+
                {wid>=901?<div id="rect">
                 <div id="gsdigit"><img  src={GS_digit} alt={GS_digit} /></div>
                 <div id="whyus">
-                  
+                  <div id="whyus_child">
+                    <div>
+                      
+                    </div>
+                    <div></div>
+                  </div>
                 </div>
                 </div>:<div id="rect-replace">
                 <div id="whyus"></div>
                 <div id="gsdigit"><img  src={GS_digit2} alt={GS_digit2} /></div>
             </div>}
-            <div id="footer"></div>
+            <div id="footer">
+              <div>
+                <p id="Best_solution">Best solutions from</p>
+              </div>
+              <div>
+                <p className="Dol">DOL Max Overlaminate Films</p>
+                <p className="Dol">Why us</p>
+                <p className="Dol">Enquire now</p>
+              </div>
+              <div className='desc'>
+              Avery Dennison Overlaminate Avery Dennison Overlaminate Films Avery Dennison Digital Overlaminate Films Avery Dennison DOL Max
+              </div>
+              <div className='desc'>
+              Overlaminate Overlaminate Films Digital Overlaminate Films
+              </div>
+            </div>
     </div>
   )
 }
