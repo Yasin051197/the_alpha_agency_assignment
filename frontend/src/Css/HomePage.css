@@ -1,0 +1,228 @@
+#container{
+    top: 0px;
+left: 0px;
+width: 83%;
+margin: auto;
+/* margin-top: 4%; */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+opacity: 1;
+border:1px solid purple
+}
+#banner{
+    top: 0px;
+left: 0px;
+width: 100%;
+background: transparent url('../Assets/banner\ image\ copy.jpg') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+#group{
+    top: 924px;
+left: 0px;
+width: 100%;
+margin-top: -4px;
+/* UI Properties */
+background: transparent url('../Assets/Group\ 218.jpg') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+#rect{
+width: 100%;
+margin-top: -4px;
+/* UI Properties */
+background: #E5E5E5 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+#gsdigit{
+width: 35%;
+/* UI Properties */
+background: transparent url('../Assets/GS_DIGITAL.jpg') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+#gsdigit img{
+width: 100%;
+}
+#whyus{
+    width: 65%;
+    opacity: 1;
+}
+#footer{
+    width: 100%;
+    height: 246px;
+    background: #000;
+    margin-bottom: 40px;
+}
+#form{
+    padding: 10px;
+    width: 28%;
+    left: 704px;
+    top: 802px;
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 2;
+    transition: top 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+#form_div{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+@media only screen and (max-width: 901px) {
+    #form_div{
+        width: 90%;
+        display: grid;
+        margin: auto;
+        gap: 2%;
+    }
+    #form{
+        left: 50px;
+        width: 70%;
+        margin:auto
+    }
+    .font-link{
+        right: 3%;
+        top:20px;
+    }
+    #Avery-replace{
+        width: 122px;
+        height: 40px;
+        top:20px;
+        right: 55%;
+        position: absolute;
+        z-index: 2;
+        background: transparent url('../Assets/Asset\ 3@4x-8@2x.jpg') 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+    .font-link-replace{
+        width: 202px;
+        top:65px;
+        right: 35%;
+        text-align: left;
+        font: normal normal normal 20px/19px Aktifo A;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 4;
+        position: absolute;
+        z-index: 2;
+    }
+    .font-link-two-replace{
+        width: 202px;
+        top:160px;
+        right: 35%;
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    font: normal normal 300 16px/18px Aktifo A;
+    letter-spacing: 0px;
+    color: #292929;
+    opacity: 1;
+    }
+    .font-link-child-replace{
+        width: 180px;
+    height: 52px;
+    top:225px;
+    right: 44%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    }
+  }
+label{
+    text-align: left;
+    font: normal normal normal 17px/14px Aktifo A;
+    color: #000000;
+    opacity: 4;
+}
+#form input{
+    margin: 5px;
+}
+#Avery{
+    width: 172px;
+    height: 60px;
+    top:50px;
+    right: 75%;
+   position: absolute;
+   z-index: 2;
+   background: transparent url('../Assets/Asset\ 3@4x-8@2x.jpg') 0% 0% no-repeat padding-box;
+   opacity: 1;
+}
+.font-link {
+    width: 502px;
+    height: 200px;
+    top:120px;
+    right: 53%;
+    text-align: left;
+    font: normal normal normal 41px/54px Aktifo A;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 4;
+   position: absolute;
+   z-index: 2;
+  }
+ 
+.font-link-two{
+    width: 502px;
+    height: 82px;
+    top:320px;
+    right: 53%;
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    font: normal normal 300 34px/41px Aktifo A;
+    letter-spacing: 0px;
+    color: #292929;
+    opacity: 1;
+}
+.font-link-child{
+    width: 502px;
+    height: 102px;
+    top:460px;
+    right: 56%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.font-link-child_fist{
+    width: 20%;
+    height: 100%;
+    margin: auto;
+}
+.circle{
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    background: #292929 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: auto;
+}
+.circle_div{
+    text-align: center;
+    font: normal normal normal 13px/14px Aktifo A;
+    letter-spacing: 0px;
+    color: #5D5D5D;
+    opacity: 1;
+    margin: auto;
+    margin-top: 3%;
+}
+
+form h3{
+    margin-left: 20px;
+    text-align: left;
+font: normal normal 600 24px/11px Aktifo A;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+
+}
+form p{
+    margin-left: 20px;
+    text-align: left;
+    font: normal normal normal 20px/20px Aktifo A;
+    letter-spacing: 0px;
+    color: #292929;
+    opacity: 1;
+}
