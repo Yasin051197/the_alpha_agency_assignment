@@ -54,7 +54,7 @@ width: 100%;
     padding: 10px;
     width: 28%;
     left: 704px;
-    top: 802px;
+    top: 902px;
     background-color: #FFFFFF;
     position: fixed;
     z-index: 2;
@@ -79,6 +79,21 @@ width: 100%;
         left: 50px;
         width: 70%;
         margin:auto
+    }
+    #footer{
+        width: 90%;
+        margin: auto;
+    }
+    #gsdigit{
+        width: 90%;
+        margin:auto ;
+    }
+    #whyus{
+        width: 90%;
+        margin:auto;
+        height: 1034px;
+        background: #E5E5E5 0% 0% no-repeat padding-box;
+        opacity: 1;
     }
     .font-link{
         right: 3%;
@@ -141,8 +156,8 @@ label{
 #Avery{
     width: 172px;
     height: 60px;
-    top:50px;
-    right: 75%;
+    top:30px;
+    right: 72%;
    position: absolute;
    z-index: 2;
    background: transparent url('../Assets/Asset\ 3@4x-8@2x.jpg') 0% 0% no-repeat padding-box;
@@ -151,10 +166,10 @@ label{
 .font-link {
     width: 502px;
     height: 200px;
-    top:120px;
-    right: 53%;
+    top:100px;
+    right: 50%;
     text-align: left;
-    font: normal normal normal 41px/54px Aktifo A;
+    font: normal normal normal 37px/50px Aktifo A;
     letter-spacing: 0px;
     color: #000000;
     opacity: 4;
@@ -165,12 +180,12 @@ label{
 .font-link-two{
     width: 502px;
     height: 82px;
-    top:320px;
-    right: 53%;
+    top:280px;
+    right: 50%;
     position: absolute;
     z-index: 2;
     text-align: left;
-    font: normal normal 300 34px/41px Aktifo A;
+    font: normal normal 300 26px/34px Aktifo A;
     letter-spacing: 0px;
     color: #292929;
     opacity: 1;
@@ -178,8 +193,8 @@ label{
 .font-link-child{
     width: 502px;
     height: 102px;
-    top:460px;
-    right: 56%;
+    top:400px;
+    right: 54%;
     position: absolute;
     z-index: 2;
     display: flex;

@@ -6,8 +6,9 @@ import GS_digit from "../Assets/GS_DIGITAL.jpg"
 import Avery from "../Assets/Asset 3@4x-8@2x.jpg"
 import MaskG2 from "../Assets/Mask Group 2@2x.jpg"
 import MaskG1 from "../Assets/Mask Group 1@2x.jpg"
+import GS_digit2 from "../Assets/GS_DIGITAL_AD_WALL_FILMS_INTERIOR_DESIGN_COLLECTION_Indoor_MPI8621_Removable.jpg"
 const HomePage = () => {
-    const [wid,setwid]=useState()
+    const [wid,setwid]=useState(window.innerWidth)
     const currentsize=()=>{
       setwid(()=>window.innerWidth)
     }
@@ -16,18 +17,18 @@ const HomePage = () => {
       return ()=>{
         window.removeEventListener("resize",currentsize)
       }
-    },[wid])
+    },[])
   
     useEffect(() => {
         const handleScroll = () => {
           const scrollPosition = window.scrollY;
           let formE=document.getElementById("form")
-          if (scrollPosition > 100) {
+          if (scrollPosition > 50) {
             formE.style.animationName="slideUp"
             formE.style.animationDuration='1s'
             formE.style.top="20px"
           } else {
-            formE.style.top="802px"
+            formE.style.top="902px"
           }
         };
         window.addEventListener('scroll', handleScroll);
@@ -120,14 +121,25 @@ const HomePage = () => {
                  <br />
                  <input type="text" />
                  <br />
-                 
+                 <label htmlFor='Additional Information:'>Additional Information:</label>
+                 <br />
+                 <input type="text" />
+                 <br />
+                 <input type="checkbox" />
+                 <label htmlFor='checkbox'>I'd like to receive promotions, product information and service offers from Avery Dennison.</label>
+                 <br />
                  <input style={{border:"1px solid #F26621",padding:"10px 20px",color: "#FFFFFF",borderRadius:"9px",background: "#F26621"}} type="submit" value="Submit >" />
                </form>
                {wid>=901?<img id="group" src={group} alt={group} />:<img id="group" src={MaskG1} alt={MaskG1} />}
-            <div id="rect">
+               {wid>=901?<div id="rect">
                 <div id="gsdigit"><img  src={GS_digit} alt={GS_digit} /></div>
+                <div id="whyus">
+                  
+                </div>
+                </div>:<div id="rect-replace">
                 <div id="whyus"></div>
-            </div>
+                <div id="gsdigit"><img  src={GS_digit2} alt={GS_digit2} /></div>
+            </div>}
             <div id="footer"></div>
     </div>
   )
